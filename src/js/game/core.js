@@ -424,6 +424,8 @@ export class GameCore {
             // Miner & Static map entities etc.
             root.map.drawForeground(params);
 
+            systems.networkOut.draw(params);
+
             // HUB Overlay
             systems.hub.draw(params);
 

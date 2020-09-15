@@ -329,6 +329,18 @@ export class ItemEjectorSystem extends GameSystemWithFilter {
             return false;
         }
 
+        const networkOutComp = receiver.components.NetworkOut;
+        if (networkOutComp) {
+            // It's a storage
+            if (networkOutComp.canAcceptItem(item)) {
+                networkOutComp.takeItem(item);
+                return true;
+            }
+
+            // NetworkOut can't have anything else
+            return false;
+        }
+
         return false;
     }
 

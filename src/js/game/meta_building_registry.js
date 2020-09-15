@@ -23,6 +23,7 @@ import { MetaWireTunnelBuilding, enumWireTunnelVariants } from "./buildings/wire
 import { MetaDisplayBuilding } from "./buildings/display";
 import { MetaVirtualProcessorBuilding, enumVirtualProcessorVariants } from "./buildings/virtual_processor";
 import { MetaReaderBuilding } from "./buildings/reader";
+import { MetaNetworkOutBuilding } from "./buildings/network_out";
 
 const logger = createLogger("building_registry");
 
@@ -47,6 +48,10 @@ export function initMetaBuildingRegistry() {
     gMetaBuildingRegistry.register(MetaDisplayBuilding);
     gMetaBuildingRegistry.register(MetaVirtualProcessorBuilding);
     gMetaBuildingRegistry.register(MetaReaderBuilding);
+    gMetaBuildingRegistry.register(MetaNetworkOutBuilding);
+
+    // Network Out
+    registerBuildingVariant(101, MetaNetworkOutBuilding);
 
     // Belt
     registerBuildingVariant(1, MetaBeltBaseBuilding, defaultBuildingVariant, 0);

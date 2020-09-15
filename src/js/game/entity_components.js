@@ -17,6 +17,7 @@ import { LeverComponent } from "./components/lever";
 import { WireTunnelComponent } from "./components/wire_tunnel";
 import { DisplayComponent } from "./components/display";
 import { BeltReaderComponent } from "./components/belt_reader";
+import { NetworkOutComponent } from "./components/networkOut";
 /* typehints:end */
 
 /**
@@ -80,6 +81,9 @@ export class EntityComponentStorage {
 
         /** @type {BeltReaderComponent} */
         this.BeltReader;
+
+        /** @type {NetworkOutComponent} */
+        this.NetworkOut;
 
         /* typehints:end */
     }

@@ -637,6 +637,13 @@ buildings:
             name: Compare
             description: Returns true if both items are exactly equal. Can compare shapes, items and booleans.
 
+    network_out:
+        default:
+            name: &network_out Network Out
+            description: Out from the network
+
+
+
 storyRewards:
     # Those are the rewards gained from completing the store
     reward_cutter_and_trash:

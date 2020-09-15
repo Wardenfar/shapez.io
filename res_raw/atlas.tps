@@ -267,6 +267,7 @@
             <key type="filename">sprites/blueprints/logic_gate.png</key>
             <key type="filename">sprites/blueprints/miner-chainable.png</key>
             <key type="filename">sprites/blueprints/miner.png</key>
+            <key type="filename">sprites/blueprints/network_out.png</key>
             <key type="filename">sprites/blueprints/reader.png</key>
             <key type="filename">sprites/blueprints/rotater-ccw.png</key>
             <key type="filename">sprites/blueprints/rotater-fl.png</key>
@@ -283,6 +284,7 @@
             <key type="filename">sprites/blueprints/virtual_processor-analyzer.png</key>
             <key type="filename">sprites/blueprints/virtual_processor-rotater.png</key>
             <key type="filename">sprites/blueprints/virtual_processor-shapecompare.png</key>
+            <key type="filename">sprites/blueprints/virtual_processor-stacker.png</key>
             <key type="filename">sprites/blueprints/virtual_processor-unstacker.png</key>
             <key type="filename">sprites/blueprints/virtual_processor.png</key>
             <key type="filename">sprites/blueprints/wire_tunnel-coating.png</key>
@@ -296,6 +298,7 @@
             <key type="filename">sprites/buildings/logic_gate-xor.png</key>
             <key type="filename">sprites/buildings/logic_gate.png</key>
             <key type="filename">sprites/buildings/miner-chainable.png</key>
+            <key type="filename">sprites/buildings/network_out.png</key>
             <key type="filename">sprites/buildings/reader.png</key>
             <key type="filename">sprites/buildings/rotater-ccw.png</key>
             <key type="filename">sprites/buildings/rotater-fl.png</key>
@@ -310,6 +313,7 @@
             <key type="filename">sprites/buildings/virtual_processor-analyzer.png</key>
             <key type="filename">sprites/buildings/virtual_processor-rotater.png</key>
             <key type="filename">sprites/buildings/virtual_processor-shapecompare.png</key>
+            <key type="filename">sprites/buildings/virtual_processor-stacker.png</key>
             <key type="filename">sprites/buildings/virtual_processor-unstacker.png</key>
             <key type="filename">sprites/buildings/virtual_processor.png</key>
             <key type="filename">sprites/buildings/wire_tunnel-coating.png</key>

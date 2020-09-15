@@ -17,6 +17,7 @@ import { LeverComponent } from "./components/lever";
 import { WireTunnelComponent } from "./components/wire_tunnel";
 import { DisplayComponent } from "./components/display";
 import { BeltReaderComponent } from "./components/belt_reader";
+import { NetworkOutComponent } from "./components/networkOut";
 
 export function initComponentRegistry() {
     gComponentRegistry.register(StaticMapEntityComponent);
@@ -37,6 +38,7 @@ export function initComponentRegistry() {
     gComponentRegistry.register(WireTunnelComponent);
     gComponentRegistry.register(DisplayComponent);
     gComponentRegistry.register(BeltReaderComponent);
+    gComponentRegistry.register(NetworkOutComponent);
 
     // IMPORTANT ^^^^^ UPDATE ENTITY COMPONENT STORAGE AFTERWARDS
 

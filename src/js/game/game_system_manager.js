@@ -22,6 +22,7 @@ import { LeverSystem } from "./systems/lever";
 import { DisplaySystem } from "./systems/display";
 import { ItemProcessorOverlaysSystem } from "./systems/item_processor_overlays";
 import { BeltReaderSystem } from "./systems/belt_reader";
+import { NetworkOutSystem } from "./systems/network_out";
 
 const logger = createLogger("game_system_manager");
 
@@ -92,6 +93,9 @@ export class GameSystemManager {
             /** @type {BeltReaderSystem} */
             beltReader: null,
 
+            /** @type {NetworkOutSystem} */
+            networkOut: null,
+
             /* typehints:end */
         };
         this.systemUpdateOrder = [];
@@ -152,6 +156,8 @@ export class GameSystemManager {
         add("display", DisplaySystem);
 
         add("itemProcessorOverlays", ItemProcessorOverlaysSystem);
+
+        add("networkOut", NetworkOutSystem);
 
         logger.log("📦 There are", this.systemUpdateOrder.length, "game systems");
     }
