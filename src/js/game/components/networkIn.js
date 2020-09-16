@@ -26,7 +26,6 @@ export class NetworkInComponent extends Component {
      * @param {BaseItem} item
      */
     takeItem(item) {
-        this.cachedMinedItem = item;
-        console.log(item);
+        
     }
 }

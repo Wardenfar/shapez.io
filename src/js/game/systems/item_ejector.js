@@ -7,6 +7,7 @@ import { BaseItem } from "../base_item";
 import { ItemEjectorComponent } from "../components/item_ejector";
 import { Entity } from "../entity";
 import { GameSystemWithFilter } from "../game_system_with_filter";
+import { ShapeItem } from "../items/shape_item";
 import { MapChunkView } from "../map_chunk_view";
 
 const logger = createLogger("systems/ejector");
@@ -342,8 +343,13 @@ export class ItemEjectorSystem extends GameSystemWithFilter {
 
         const networkInComp = receiver.components.NetworkIn;
         if (networkInComp) {
-            if (networkInComp.canAcceptItem(item)) {
+            if (networkInComp.canAcceptItem(item) && item instanceof ShapeItem) {
                 networkInComp.takeItem(item);
+
+                /** @type ShapeItem */
+                let shape = item;
+
+                this.root.systemMgr.systems.network.sendShape(shape.definition);
                 return true;
             }
 

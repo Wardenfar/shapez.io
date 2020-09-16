@@ -1,4 +1,4 @@
-import { globalConfig } from "../../core/config";
+import { globalConfig, THIRDPARTY_URLS } from "../../core/config";
 import { DrawParameters } from "../../core/draw_parameters";
 import { enumDirectionToVector } from "../../core/vector";
 import { BaseItem } from "../base_item";
@@ -64,20 +64,27 @@ export class NetworkOutSystem extends GameSystemWithFilter {
 
             //}
 
-            if(networkOutComp.cachedMinedItem){
-
-                const mineDuration = 1 / miningSpeed;
-                const timeSinceMine = this.root.time.now() - networkOutComp.lastMiningTime;
-                if (timeSinceMine > mineDuration) {
-                    // Store how much we overflowed
-                    const buffer = Math.min(timeSinceMine - mineDuration, this.root.dynamicTickrate.deltaSeconds);
-
-                    if (this.tryPerformMinerEject(entity, networkOutComp.cachedMinedItem)) {
-                        // Analytics hook
-                        this.root.signals.itemProduced.dispatch(networkOutComp.cachedMinedItem);
-                        // Store mining time
-                        networkOutComp.lastMiningTime = this.root.time.now() - buffer;
-                    }
+            if(networkOutComp.cachedMinedItem && networkOutComp.cachedMinedItem instanceof ShapeItem){
+                if(!this.lastTimeRejected || (this.root.time.now() - this.lastTimeRejected) >= 3){
+                    this.root.systemMgr.systems.network.getShape(networkOutComp.cachedMinedItem.definition).then(result => {
+                        if(!result){
+                            this.lastTimeRejected = this.root.time.now();
+                            return;
+                        }
+                        const mineDuration = 1 / miningSpeed;
+                        const timeSinceMine = this.root.time.now() - networkOutComp.lastMiningTime;
+                        if (timeSinceMine > mineDuration) {
+                            // Store how much we overflowed
+                            const buffer = Math.min(timeSinceMine - mineDuration, this.root.dynamicTickrate.deltaSeconds);
+        
+                            if (this.tryPerformMinerEject(entity, networkOutComp.cachedMinedItem)) {
+                                // Analytics hook
+                                this.root.signals.itemProduced.dispatch(networkOutComp.cachedMinedItem);
+                                // Store mining time
+                                networkOutComp.lastMiningTime = this.root.time.now() - buffer;
+                            }
+                        }
+                    })
                 }
             }
         }
