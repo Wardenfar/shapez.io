@@ -14,6 +14,7 @@ import { MetaFilterBuilding } from "../../buildings/filter";
 import { MetaDisplayBuilding } from "../../buildings/display";
 import { MetaReaderBuilding } from "../../buildings/reader";
 import { MetaNetworkOutBuilding } from "../../buildings/network_out";
+import { MetaNetworkInBuilding } from "../../buildings/network_in";
 
 const supportedBuildings = [
     MetaBeltBaseBuilding,
@@ -30,7 +31,8 @@ const supportedBuildings = [
     MetaFilterBuilding,
     MetaDisplayBuilding,
     MetaReaderBuilding,
-    MetaNetworkOutBuilding
+    MetaNetworkOutBuilding,
+    MetaNetworkInBuilding,
 ];
 
 export class HUDBuildingsToolbar extends HUDBaseToolbar {

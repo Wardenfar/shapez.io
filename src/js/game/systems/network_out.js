@@ -13,22 +13,6 @@ import { ShapeDefinition, enumSubShape, ShapeLayer, ShapeLayerItem } from "../sh
 export class NetworkOutSystem extends GameSystemWithFilter {
     constructor(root) {
         super(root, [NetworkOutComponent]);
-
-        this.root.signals.entityAdded.add(this.onEntityChanged, this);
-        this.root.signals.entityChanged.add(this.onEntityChanged, this);
-        this.root.signals.entityDestroyed.add(this.onEntityChanged, this);
-    }
-
-    /**
-     * Called whenever an entity got changed
-     * @param {Entity} entity
-     */
-    onEntityChanged(entity) {
-        /*const minerComp = entity.components.Miner;
-        if (minerComp && minerComp.chainable) {
-            // Miner component, need to recompute
-            this.needsRecompute = true;
-        }*/
     }
 
     update() {
@@ -40,7 +24,6 @@ export class NetworkOutSystem extends GameSystemWithFilter {
         for (let i = 0; i < this.allEntities.length; ++i) {
             const entity = this.allEntities[i];
             const networkOutComp = entity.components.NetworkOut;
-            const acceptComp = entity.components.ItemAcceptor;
 
             // Reset everything on recompute
             /*if (this.needsRecompute) {
@@ -106,7 +89,6 @@ export class NetworkOutSystem extends GameSystemWithFilter {
      * @param {BaseItem} item
      */
     tryPerformMinerEject(entity, item) {
-        const minerComp = entity.components.Miner;
         const ejectComp = entity.components.ItemEjector;
 
         // Seems we are a regular miner or at the end of a row, try actually ejecting

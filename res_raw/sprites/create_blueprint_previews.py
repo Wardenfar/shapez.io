@@ -107,4 +107,6 @@ buildings = listdir("buildings")
 for buildingId in buildings:
     if "hub" in buildingId:
         continue
+    if "network_in" in buildingId:
+        continue
     roberts_cross("buildings/" + buildingId + "", "blueprints/" + buildingId + "")

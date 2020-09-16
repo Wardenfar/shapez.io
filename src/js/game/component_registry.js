@@ -18,6 +18,7 @@ import { WireTunnelComponent } from "./components/wire_tunnel";
 import { DisplayComponent } from "./components/display";
 import { BeltReaderComponent } from "./components/belt_reader";
 import { NetworkOutComponent } from "./components/networkOut";
+import { NetworkInComponent } from "./components/networkIn";
 
 export function initComponentRegistry() {
     gComponentRegistry.register(StaticMapEntityComponent);
@@ -39,6 +40,7 @@ export function initComponentRegistry() {
     gComponentRegistry.register(DisplayComponent);
     gComponentRegistry.register(BeltReaderComponent);
     gComponentRegistry.register(NetworkOutComponent);
+    gComponentRegistry.register(NetworkInComponent);
 
     // IMPORTANT ^^^^^ UPDATE ENTITY COMPONENT STORAGE AFTERWARDS
 

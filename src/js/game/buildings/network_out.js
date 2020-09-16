@@ -63,9 +63,15 @@ export class MetaNetworkOutBuilding extends MetaBuilding {
                 slots: [{ pos: new Vector(0, 0), direction: enumDirection.top }],
             })
         );
+        
         entity.addComponent(
             new ItemAcceptorComponent({
-            slots: [{ pos: new Vector(0, 0), directions: [enumDirection.bottom] }],
-        }))
+                slots: [{ 
+                    pos: new Vector(0, 0), 
+                    directions: [enumDirection.bottom], 
+                    filter: "shape"
+                }],
+            }
+        ))
     }
 }

@@ -642,7 +642,10 @@ buildings:
             name: &network_out Network Out
             description: Out from the network
 
-
+    network_in:
+        default:
+            name: &network_in Network In
+            description: Into the network
 
 storyRewards:
     # Those are the rewards gained from completing the store

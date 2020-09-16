@@ -1,0 +1,141 @@
+{"frames": {
+
+"sprites/belt/built/forward_5.png":
+{
+	"frame": {"x":3,"y":3,"w":116,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":116,"h":144},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/belt/built/forward_6.png":
+{
+	"frame": {"x":123,"y":3,"w":116,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":116,"h":144},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/belt/built/forward_7.png":
+{
+	"frame": {"x":243,"y":3,"w":116,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":116,"h":144},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/belt/built/forward_8.png":
+{
+	"frame": {"x":363,"y":3,"w":116,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":116,"h":144},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/belt/built/forward_9.png":
+{
+	"frame": {"x":483,"y":3,"w":116,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":116,"h":144},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/blueprints/belt_top.png":
+{
+	"frame": {"x":603,"y":3,"w":116,"h":144},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":14,"y":0,"w":116,"h":144},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/blueprints/underground_belt_exit.png":
+{
+	"frame": {"x":723,"y":3,"w":138,"h":112},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":4,"y":0,"w":138,"h":112},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/blueprints/wire-split.png":
+{
+	"frame": {"x":3,"y":151,"w":144,"h":82},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":62,"w":144,"h":82},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/buildings/underground_belt_entry.png":
+{
+	"frame": {"x":743,"y":119,"w":137,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":33,"w":137,"h":111},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/buildings/underground_belt_exit-tier2.png":
+{
+	"frame": {"x":865,"y":3,"w":137,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":137,"h":111},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/buildings/underground_belt_exit.png":
+{
+	"frame": {"x":884,"y":118,"w":137,"h":111},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":5,"y":0,"w":137,"h":111},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/buildings/wire-split.png":
+{
+	"frame": {"x":151,"y":151,"w":144,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":63,"w":144,"h":81},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/wires/sets/color_split.png":
+{
+	"frame": {"x":299,"y":151,"w":144,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":63,"w":144,"h":81},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/wires/sets/conflict_split.png":
+{
+	"frame": {"x":447,"y":151,"w":144,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":63,"w":144,"h":81},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/wires/sets/regular_split.png":
+{
+	"frame": {"x":151,"y":151,"w":144,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":63,"w":144,"h":81},
+	"sourceSize": {"w":144,"h":144}
+},
+"sprites/wires/sets/shape_split.png":
+{
+	"frame": {"x":595,"y":151,"w":144,"h":81},
+	"rotated": false,
+	"trimmed": true,
+	"spriteSourceSize": {"x":0,"y":63,"w":144,"h":81},
+	"sourceSize": {"w":144,"h":144}
+}},
+"meta": {
+	"app": "https://www.codeandweb.com/texturepacker",
+	"version": "1.0",
+	"image": "atlas1_hq.png",
+	"format": "RGBA8888",
+	"size": {"w":1024,"h":236},
+	"scale": "0.75",
+	"related_multi_packs": [ "atlas0_hq.json" ],
+	"smartupdate": "$TexturePacker:SmartUpdate:71acdfc52614ccc1543d75a0c9696e14:0614c7cd006ea63adc444ce3dce727bd:aaf85a1230f18b2ce79be7867e1da916$"
+}
+}

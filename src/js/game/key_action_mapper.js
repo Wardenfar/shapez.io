@@ -67,6 +67,7 @@ export const KEYMAPPINGS = {
         virtual_processor: { keyCode: key("5") },
 
         network_out: { keyCode: key("+") },
+        network_in: { keyCode: key("-") },
     },
 
     placement: {

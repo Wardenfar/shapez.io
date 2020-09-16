@@ -18,6 +18,7 @@ import { WireTunnelComponent } from "./components/wire_tunnel";
 import { DisplayComponent } from "./components/display";
 import { BeltReaderComponent } from "./components/belt_reader";
 import { NetworkOutComponent } from "./components/networkOut";
+import { NetworkInComponent } from "./components/networkIn";
 /* typehints:end */
 
 /**
@@ -84,6 +85,10 @@ export class EntityComponentStorage {
 
         /** @type {NetworkOutComponent} */
         this.NetworkOut;
+
+        /** @type {NetworkInComponent} */
+        this.NetworkIn;
+
 
         /* typehints:end */
     }

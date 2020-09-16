@@ -331,13 +331,23 @@ export class ItemEjectorSystem extends GameSystemWithFilter {
 
         const networkOutComp = receiver.components.NetworkOut;
         if (networkOutComp) {
-            // It's a storage
             if (networkOutComp.canAcceptItem(item)) {
                 networkOutComp.takeItem(item);
                 return true;
             }
 
             // NetworkOut can't have anything else
+            return false;
+        }
+
+        const networkInComp = receiver.components.NetworkIn;
+        if (networkInComp) {
+            if (networkInComp.canAcceptItem(item)) {
+                networkInComp.takeItem(item);
+                return true;
+            }
+
+            // NetworkIn can't have anything else
             return false;
         }
 

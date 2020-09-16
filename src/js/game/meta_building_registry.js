@@ -24,6 +24,7 @@ import { MetaDisplayBuilding } from "./buildings/display";
 import { MetaVirtualProcessorBuilding, enumVirtualProcessorVariants } from "./buildings/virtual_processor";
 import { MetaReaderBuilding } from "./buildings/reader";
 import { MetaNetworkOutBuilding } from "./buildings/network_out";
+import { MetaNetworkInBuilding } from "./buildings/network_in";
 
 const logger = createLogger("building_registry");
 
@@ -49,9 +50,13 @@ export function initMetaBuildingRegistry() {
     gMetaBuildingRegistry.register(MetaVirtualProcessorBuilding);
     gMetaBuildingRegistry.register(MetaReaderBuilding);
     gMetaBuildingRegistry.register(MetaNetworkOutBuilding);
+    gMetaBuildingRegistry.register(MetaNetworkInBuilding);
 
     // Network Out
     registerBuildingVariant(101, MetaNetworkOutBuilding);
+
+    // Network In
+    registerBuildingVariant(102, MetaNetworkInBuilding);
 
     // Belt
     registerBuildingVariant(1, MetaBeltBaseBuilding, defaultBuildingVariant, 0);
